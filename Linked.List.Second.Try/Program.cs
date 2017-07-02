@@ -39,11 +39,11 @@ namespace Linked.List.Second.Try
 
         public Node FindFirst(object lookupData)
         {
-            if (Head.Data == lookupData) return Head;
+            if (Head.Data.Equals(lookupData)) return Head;
             var next = Head.Next;
             do
             {
-                if (next.Data == lookupData)
+                if (next.Data.Equals(lookupData))
                     return next;
                 next = next.Next;
             } while (next != null);
@@ -74,7 +74,7 @@ namespace Linked.List.Second.Try
 
             const string giang = "giang";
             const string thao = "thao";
-            const string num1994 = "1994";
+            const int num1994 = 1994;
             const string num1992 = "1992";
             var person = new
             {
@@ -106,6 +106,9 @@ namespace Linked.List.Second.Try
             Console.WriteLine();
 
             MyLinkedList.Traverse(giangNode.Next);
+
+            Console.WriteLine();
+            Console.WriteLine(linkedList.FindFirst(num1994));
 
             Console.ReadKey();
         }
