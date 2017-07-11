@@ -21,7 +21,7 @@ namespace Selection.Sort.Second.Try
                 Console.Write(number + ",");
             }
 
-            for (int i = 0; i < numbers.Length; i++)
+            for (int i = 0; i < numbers.Length - 1; i++)
             {
                 var smallest = i;
                 for (int j = i + 1; j < numbers.Length; j++)
