@@ -24,7 +24,7 @@ namespace Selection.Sort.Second.Try
             for (int i = 0; i < numbers.Length; i++)
             {
                 var smallest = i;
-                for (int j = i; j < numbers.Length; j++)
+                for (int j = i + 1; j < numbers.Length; j++)
                 {
                     if (numbers[j] < numbers[smallest])
                     {
