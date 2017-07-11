@@ -23,7 +23,7 @@ namespace Selection.Sort.Second.Try
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                var smallest = 0;
+                var smallest = i;
                 for (int j = i; j < numbers.Length; j++)
                 {
                     if (numbers[j] < numbers[smallest])
@@ -31,7 +31,9 @@ namespace Selection.Sort.Second.Try
                         smallest = j;
                     }
                 }
-                Swap(ref numbers[smallest], ref numbers[i]);
+                int temp = numbers[i];
+                numbers[i] = numbers[smallest];
+                numbers[smallest] = temp;
             }
 
             Console.WriteLine();
@@ -44,11 +46,5 @@ namespace Selection.Sort.Second.Try
             Console.ReadKey();
         }
 
-        static void Swap(ref int a, ref int b)
-        {
-            a = a + b;
-            b = a - b;
-            a = a - b;
-        }
     }
 }
