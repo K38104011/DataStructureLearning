@@ -23,6 +23,10 @@ namespace Heap.Binary.Tree.First.Try
             heapBinaryTree.Insert(8, "j");
             heapBinaryTree.Insert(21, "k");
             heapBinaryTree.Traverse();
+            Console.WriteLine(heapBinaryTree.ExtractMin());
+            heapBinaryTree.Traverse();
+            Console.WriteLine(heapBinaryTree.ExtractMin());
+            heapBinaryTree.Traverse();
             Console.ReadKey();
         }
     }
