@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Breadth.First.Search.First.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash.Table.Open.Addressing.First.Try", "Hash.Table.Open.Addressing.First.Try\Hash.Table.Open.Addressing.First.Try.csproj", "{F24F6532-E5B4-4452-8C1E-117B7329F8BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dijkstra.Shortet.Path", "Dijkstra.Shortet.Path\Dijkstra.Shortet.Path.csproj", "{C440505C-A924-4616-8666-5141A6712538}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{F24F6532-E5B4-4452-8C1E-117B7329F8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F24F6532-E5B4-4452-8C1E-117B7329F8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F24F6532-E5B4-4452-8C1E-117B7329F8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C440505C-A924-4616-8666-5141A6712538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C440505C-A924-4616-8666-5141A6712538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C440505C-A924-4616-8666-5141A6712538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C440505C-A924-4616-8666-5141A6712538}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
