@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Dijkstra.Shortet.Path
@@ -6,6 +7,7 @@ namespace Dijkstra.Shortet.Path
     public class Dijkstra
     {
         private readonly int[,] _graph;
+        private int[] _shortestPaths;
         public bool IsSingleTarget { get; set; }
         public int TargetVertex { get; set; }
         public int Size { get; }
@@ -23,6 +25,8 @@ namespace Dijkstra.Shortet.Path
             distanceVertices[0] = 0;
             var pickedVertices = new List<int>();
             var verticesCount = 0;
+
+            _shortestPaths = Enumerable.Repeat(int.MinValue, Size).ToArray();
 
             do
             {
@@ -49,6 +53,7 @@ namespace Dijkstra.Shortet.Path
                     if (distanceFromSource < distanceVertices[adjacentVertex])
                     {
                         distanceVertices[adjacentVertex] = distanceFromSource;
+                        _shortestPaths[adjacentVertex] = pickVertex;
                     }
                 }
 
@@ -61,6 +66,24 @@ namespace Dijkstra.Shortet.Path
             } while (verticesCount < Size);
 
             return distanceVertices;
+        }
+
+        public void WriteShortestPath()
+        {
+            var resultVerticesList = new List<int>();
+            var nextVertex = TargetVertex;
+            do
+            {
+                resultVerticesList.Add(nextVertex);
+                nextVertex = _shortestPaths[nextVertex];
+                if (nextVertex == int.MinValue)
+                {
+                    break;
+                }
+            } while (nextVertex != 0);
+            resultVerticesList.Add(0);
+            resultVerticesList.Reverse();
+            Console.WriteLine(string.Join("->", resultVerticesList));
         }
     }
 }

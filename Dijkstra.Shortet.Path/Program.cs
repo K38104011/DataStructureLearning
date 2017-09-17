@@ -31,6 +31,7 @@ namespace Dijkstra.Shortet.Path
             {
                 dijkstra.TargetVertex = i;
                 Console.WriteLine(string.Format("Vertex: {0} \tDistance from Source: {1}", i, dijkstra.FindShortestPath().First()));
+                dijkstra.WriteShortestPath();
             }
             Console.ReadKey();
         }
