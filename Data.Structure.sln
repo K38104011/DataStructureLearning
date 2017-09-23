@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash.Table.Open.Addressing.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dijkstra.Shortet.Path", "Dijkstra.Shortet.Path\Dijkstra.Shortet.Path.csproj", "{C440505C-A924-4616-8666-5141A6712538}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kruskal.Minimum.Spanning.Tree", "Kruskal.Minimum.Spanning.Tree\Kruskal.Minimum.Spanning.Tree.csproj", "{56C4BDED-ABD7-4F6E-B81D-D6D57CBA24DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{C440505C-A924-4616-8666-5141A6712538}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C440505C-A924-4616-8666-5141A6712538}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C440505C-A924-4616-8666-5141A6712538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C4BDED-ABD7-4F6E-B81D-D6D57CBA24DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C4BDED-ABD7-4F6E-B81D-D6D57CBA24DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C4BDED-ABD7-4F6E-B81D-D6D57CBA24DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C4BDED-ABD7-4F6E-B81D-D6D57CBA24DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
