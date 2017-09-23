@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dijkstra.Shortet.Path", "Di
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kruskal.Minimum.Spanning.Tree", "Kruskal.Minimum.Spanning.Tree\Kruskal.Minimum.Spanning.Tree.csproj", "{56C4BDED-ABD7-4F6E-B81D-D6D57CBA24DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quick.Sort", "Quick.Sort\Quick.Sort.csproj", "{59D51B39-8CAF-41EA-8BFF-69949E9EF475}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{56C4BDED-ABD7-4F6E-B81D-D6D57CBA24DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56C4BDED-ABD7-4F6E-B81D-D6D57CBA24DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56C4BDED-ABD7-4F6E-B81D-D6D57CBA24DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D51B39-8CAF-41EA-8BFF-69949E9EF475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D51B39-8CAF-41EA-8BFF-69949E9EF475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D51B39-8CAF-41EA-8BFF-69949E9EF475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D51B39-8CAF-41EA-8BFF-69949E9EF475}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
